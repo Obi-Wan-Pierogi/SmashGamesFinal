@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<SmashContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SmashContext") ?? throw new InvalidOperationException("Connection string 'SmashContext' not found.")));
 
-// Add services to the container.
+// Add services to the container
 
 builder.Services.AddControllers().AddJsonOptions(x =>
    x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);

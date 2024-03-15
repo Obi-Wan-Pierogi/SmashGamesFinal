@@ -9,18 +9,18 @@
 }
 
 .navbar-brand, .nav-link {
-  color: #003638;
-  font-weight: bold; /* Makes text bold */
-  text-decoration: none; /* Removes underline from links */
+  color: black;
+  font-weight: bold; 
+  text-decoration: none; 
 }
 
 .nav {
-  list-style: none; /* Removes list bullets */
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
 
 .nav-item {
-  margin-left: 20px; /* Spacing between nav links */
+  margin-left: 20px; 
 }

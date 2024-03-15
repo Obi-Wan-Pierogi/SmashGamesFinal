@@ -1,7 +1,7 @@
 .text-section {
   background-color: #F2A183;
-  border-top: 4px solid black;
-  border-bottom: 4px solid black;
+  border-top: 6px solid black;
+  border-bottom: 6px solid black;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -9,10 +9,12 @@
 }
 
 .text-section p{
-  margin: 0;
+  margin: auto;
   padding: 10px;
   width: 100%;
   text-align: center;
   font-size: 1.5em;
+  font-weight: bold;
   color: black;
+  width: 60%;
 }

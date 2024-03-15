@@ -7,7 +7,13 @@
 }
 
 .brand-logo {
-  /* Adjust width and height as needed */
-  width: 150px; /* Example width, adjust as necessary */
-  height: auto; /* Maintain aspect ratio */
+  
+  width: 300px;
+  height: auto; 
 }
+
+.card-container {
+  background-color: #003638;
+  margin: auto;
+}
+

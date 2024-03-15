@@ -3,21 +3,18 @@
   border: 2px solid green;
   border-radius: 10px;
   color: white;
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  width: 250px;
-  height: 400px auto;
-  align-items: center;
-  box-sizing: border-box;
+  min-height: 400px;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
   overflow: hidden;
 }
 
 .card-img {
   height: auto;
-  width: 100%; /* Make image fill the card */
+  width: 100%;
   object-fit: cover;
-  border-radius: 10px 10px 0 0; /* Optional: round image top corners to match the card */
+  border-radius: 10px 10px 0 0;
 }
 
 .card-body {
@@ -30,8 +27,9 @@
 }
 
 .card-title, .card-text {
-  margin: 0; /* Remove default margins for a consistent layout */
-  word-wrap: break-word; /* Ensure text wraps within the card */
+  margin: 0;
+  padding-bottom: 15px;
+  word-wrap: break-word; 
 }
 
 
@@ -43,7 +41,7 @@
   margin-top: 10px;
   cursor: pointer;
   border-radius: 5px;
-  width: 50%;
+  width: 65%;
   margin-top: auto;
   align-self: center;
 }

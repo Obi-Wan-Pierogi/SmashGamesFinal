@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from './data.service';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
-import { Studio } from './Models/Studio';
+import { Studio } from './Models/studio';
 
 @Component({
   selector: 'app-root',

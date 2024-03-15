@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GameService } from '../game.service';
+import { Game } from '../game';
 
 @Component({
   selector: 'app-card-list',
@@ -6,17 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-list.component.css']
 })
 export class CardListComponent implements OnInit {
-  cards = [];
+  games: Game[] = [];
 
   constructor(private gameService: GameService) { }
 
   ngOnInit() {
-    this.gameService.getGames().subscribe((games) => {
-      this.cards = games.map(game => ({
-        cardImage: game.ImageUrl,
-        cardTitle: game.Title,
-        cardText: game.ShortDescription
-      }));
+    this.gameService.getAllGames(); 
+    this.gameService.games$.subscribe(games => {
+      console.log("Recieved games in component:", games);
+      this.games = games;
     });
   }
 }
