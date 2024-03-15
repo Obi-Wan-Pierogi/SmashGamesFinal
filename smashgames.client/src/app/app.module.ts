@@ -7,7 +7,12 @@ import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    CardComponent,
+    CalloutComponent,
+    HomeComponent,
+    CardListComponent
   ],
   imports: [
     BrowserModule, HttpClientModule
