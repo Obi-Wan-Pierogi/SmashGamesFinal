@@ -1,0 +1,49 @@
+.card {
+  background-color: #003638;
+  border: 2px solid green;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 250px;
+  height: 400px auto;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card-img {
+  height: auto;
+  width: 100%; /* Make image fill the card */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; /* Optional: round image top corners to match the card */
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title, .card-text {
+  margin: 0; /* Remove default margins for a consistent layout */
+  word-wrap: break-word; /* Ensure text wraps within the card */
+}
+
+
+.card button {
+  background-color: #F2A183;
+  color: black;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50%;
+  margin-top: auto;
+  align-self: center;
+}

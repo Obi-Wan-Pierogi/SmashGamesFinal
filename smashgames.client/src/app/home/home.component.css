@@ -1,0 +1,13 @@
+
+.brand-logo-container {
+  background-color: #003638;
+  text-align: center; /* Centers the content horizontally */
+  padding: 50px 0; /* Adds vertical padding */
+  margin:0;
+}
+
+.brand-logo {
+  /* Adjust width and height as needed */
+  width: 150px; /* Example width, adjust as necessary */
+  height: auto; /* Maintain aspect ratio */
+}
